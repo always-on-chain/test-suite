@@ -13,7 +13,13 @@ class Test extends React.Component {
 
   render () {
     return (
-      <TestCases test={this.state.test} />
+      <div>
+        <div id="intro">
+          <h2 id="header">Tests for {this.state.test.app_name}</h2>
+          <p>Time ran: {this.state.test.time_stamp}</p>
+        </div>
+        <TestCases test={this.state.test} />
+      </div>
     )
   }
 }
