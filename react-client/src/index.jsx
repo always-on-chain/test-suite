@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TestCases from './Components/TestCases.jsx';
 import data from '../../resources/data.json';
 
 class Test extends React.Component {
@@ -11,9 +12,8 @@ class Test extends React.Component {
   }
 
   render () {
-    console.log('data', data)
     return (
-      <p>HI</p>
+      <TestCases test={this.state.test} />
     )
   }
 }
