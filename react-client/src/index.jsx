@@ -15,7 +15,7 @@ class Test extends React.Component {
     return (
       <div>
         <div id="intro">
-          <h2 id="header">Tests for {this.state.test.app_name}</h2>
+          <h1 id="header">Tests for {this.state.test.app_name}</h1>
           <p>Time ran: {this.state.test.time_stamp}</p>
         </div>
         <TestCases test={this.state.test} />

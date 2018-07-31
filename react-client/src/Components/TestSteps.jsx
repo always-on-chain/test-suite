@@ -11,6 +11,7 @@ const TestSteps = (props) => {
           <div className="step-name">{steps.step_name}</div>
           <img className="screenshots" src={'../../resources/' + steps.screenshot} />
           <TableData steps={steps} />
+          <hr className="hr" />
         </div>
       )
     })
